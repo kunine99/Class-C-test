@@ -1,0 +1,92 @@
+* {
+    font-family: '標楷體';
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1024px;
+    height: 768px;
+    margin: 10px 0;
+    padding: 0 12px;
+}
+
+.top {
+    width: 1000px;
+    height: 65px;
+}
+
+.aside {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    width: 215px;
+    height: 683px;
+}
+
+body>*:not(aside, section), aside>*, section>* {
+    border: 1px solid lightgray;
+}
+
+.menu {
+    height: 678px;
+}
+
+.aside-menu-header {
+font-weight: 500;
+font-size: 24px;
+text-decoration: underline;
+text-align: center;
+margin-bottom: 10px;
+color: #FF00FF;
+}
+
+aside>nav>a{
+    color: #000000;
+font-size: 16px;
+background: url(/images/menu1.png);
+display: flex;
+width: 200px;
+/* align-items: center; */
+text-align: center;
+display: inline-block;
+/* inline-size: 200px; */
+
+
+}
+aside>nav>a:hover{
+    background: url(/images/menu2.png);
+}
+
+.updeate {
+    height: 25px;
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    /* height: 683px; */
+    width: calc(100%-215px);
+}
+
+.marquee {
+    height: 29px;
+    font-size: 24px;
+    color: #0000FF;
+}
+
+.content {
+width: 785px;
+height: 654px;
+}
+
+.footer {
+    width: 1000px;
+    height: 20px;
+    text-align: center;
+}
